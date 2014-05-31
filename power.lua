@@ -56,7 +56,7 @@ while true do
 
   sleep(0.5)
 
-  i = (i + 1) % 20 + 1
+  i = i % 20 + 1
   print(i)
   if i == 20 then
   	initializing = false
