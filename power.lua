@@ -25,6 +25,9 @@ while true do
   monitor.clear()
   monitor.setCursorPos(1,1)
   monitor.write(textutils.formatTime(os.time(),false))
+  if os.time() > 12541 and os.time() < 23458 then
+  	monitor.write(" - SLEEP")
+  end
   monitor.setCursorPos(1,2)
   if power < 1000 then
   	monitor.write("Power: Empty")
